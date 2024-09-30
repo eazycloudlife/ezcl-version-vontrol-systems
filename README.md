@@ -8,31 +8,52 @@
 
 ---
 
+### **Index**
+
+1. [What is this repository for?](#what-is-this-repository-for)
+2. [Git Basics](#git-basics)
+3. [Branching & Merging](#branching--merging)
+4. [Viewing Commit History](#viewing-commit-history)
+5. [Undoing Changes](#undoing-changes)
+6. [Remote Repositories](#remote-repositories)
+7. [Advanced Git Commands](#advanced-git-commands)
+8. [Git Aliases](#git-aliases)
+9. [Git Ignoring Files](#git-ignoring-files)
+10. [Git Hooks](#git-hooks)
+
+**[⬆ Back to Index](#index)**
+
+## What is this repository for?
+
 Here's a **comprehensive Git cheat sheet** that covers commands from basic to advanced, grouped by common workflows and use cases:
+
+**[⬆ Back to Index](#index)**
 
 ### **Git Basics**
 
-| Command                                                | Description                                                              |
-| ------------------------------------------------------ | ------------------------------------------------------------------------ |
-| `git config --global user.name "<Your Name>"`          | Configure the user name                                                  |
-| `git config --global user.email "<Your Email>"`        | Configure the user email                                                 |
-| `git config --global user.password "<Your Password>"`  | Configure the user password                                              |
-| `git init`                                             | Initialize a new Git repository in your project directory                |
-| `git clone <url>`                                      | Clone a remote repository to your local machine                          |
-| `git status`                                           | Show the working directory status (untracked, modified files)            |
-| `git add <file>`                                       | Stage specific files for the next commit                                 |
-| `git add .`                                            | Stage all modified and untracked files for the next commit               |
-| `git commit -m "message"`                              | Commit staged changes with a commit message                              |
-| `git log`                                              | Show commit history                                                      |
-| `git log --oneline`                                    | Show a simplified commit history (one line per commit)                   |
-| `git diff`                                             | Show changes between working directory and the last commit               |
-| `git diff --staged`                                    | Show changes between staged files and the last commit                    |
-| `git pull`                                             | Fetch and merge changes from the remote repository to the current branch |
-| `git push`                                             | Push local changes to the remote repository                              |
-| `git branch`                                           | List branches                                                            |
-| `git branch -d <branch>`                               | Delete a branch (local)                                                  |
-| `git checkout <branch>`                                | Switch to a different branch                                             |
-| `git checkout -b <branch>`                             | Create and switch to a new branch                                        |
+| Command                                               | Description                                                              |
+| ----------------------------------------------------- | ------------------------------------------------------------------------ |
+| `git config --global user.name "<Your Name>"`         | Configure the user name                                                  |
+| `git config --global user.email "<Your Email>"`       | Configure the user email                                                 |
+| `git config --global user.password "<Your Password>"` | Configure the user password                                              |
+| `git init`                                            | Initialize a new Git repository in your project directory                |
+| `git clone <url>`                                     | Clone a remote repository to your local machine                          |
+| `git status`                                          | Show the working directory status (untracked, modified files)            |
+| `git add <file>`                                      | Stage specific files for the next commit                                 |
+| `git add .`                                           | Stage all modified and untracked files for the next commit               |
+| `git commit -m "message"`                             | Commit staged changes with a commit message                              |
+| `git log`                                             | Show commit history                                                      |
+| `git log --oneline`                                   | Show a simplified commit history (one line per commit)                   |
+| `git diff`                                            | Show changes between working directory and the last commit               |
+| `git diff --staged`                                   | Show changes between staged files and the last commit                    |
+| `git pull`                                            | Fetch and merge changes from the remote repository to the current branch |
+| `git push`                                            | Push local changes to the remote repository                              |
+| `git branch`                                          | List branches                                                            |
+| `git branch -d <branch>`                              | Delete a branch (local)                                                  |
+| `git checkout <branch>`                               | Switch to a different branch                                             |
+| `git checkout -b <branch>`                            | Create and switch to a new branch                                        |
+
+**[⬆ Back to Index](#index)**
 
 ---
 
@@ -55,6 +76,8 @@ Here's a **comprehensive Git cheat sheet** that covers commands from basic to ad
 | `git tag <tagname>`                 | Create a lightweight tag at the current commit                 |
 | `git tag -a <tagname> -m "message"` | Create an annotated tag with a message                         |
 
+**[⬆ Back to Index](#index)**
+
 ---
 
 ### **Viewing Commit History**
@@ -68,6 +91,8 @@ Here's a **comprehensive Git cheat sheet** that covers commands from basic to ad
 | `git show <commit-hash>`    | Show the details of a specific commit                                    |
 | `git blame <file>`          | Show who made each change in the file and when                           |
 | `git reflog`                | Show the history of changes to HEAD (useful for recovering lost commits) |
+
+**[⬆ Back to Index](#index)**
 
 ---
 
@@ -83,6 +108,8 @@ Here's a **comprehensive Git cheat sheet** that covers commands from basic to ad
 | `git clean -fd`               | Remove untracked files and directories                                               |
 | `git stash pop`               | Apply and remove the latest stash                                                    |
 
+**[⬆ Back to Index](#index)**
+
 ---
 
 ### **Remote Repositories**
@@ -96,6 +123,8 @@ Here's a **comprehensive Git cheat sheet** that covers commands from basic to ad
 | `git pull <remote> <branch>`              | Fetch and merge changes from the remote branch   |
 | `git remote rm <name>`                    | Remove a remote repository                       |
 | `git remote rename <old-name> <new-name>` | Rename a remote repository                       |
+
+**[⬆ Back to Index](#index)**
 
 ---
 
@@ -112,6 +141,8 @@ Here's a **comprehensive Git cheat sheet** that covers commands from basic to ad
 | `git shortlog -s -n`                                    | Show the number of commits by author                          |
 | `git diff <branch1>..<branch2>`                         | Show the difference between two branches                      |
 
+**[⬆ Back to Index](#index)**
+
 ---
 
 ### **Git Aliases**
@@ -125,6 +156,8 @@ You can create shortcuts for frequently used commands by setting Git aliases:
 | `git config --global alias.ci commit`   | Alias `git ci` for `git commit`   |
 | `git config --global alias.st status`   | Alias `git st` for `git status`   |
 
+**[⬆ Back to Index](#index)**
+
 ---
 
 ### **Git Ignoring Files**
@@ -133,6 +166,8 @@ You can create shortcuts for frequently used commands by setting Git aliases:
 | ------------------------ | ------------------------------------------------------------ |
 | `.gitignore`             | A file specifying files and directories to be ignored by Git |
 | `git rm --cached <file>` | Remove a file from Git tracking while keeping it locally     |
+
+**[⬆ Back to Index](#index)**
 
 ---
 
@@ -145,6 +180,10 @@ Git hooks allow you to run scripts automatically at certain points in the Git wo
 | `.git/hooks/pre-commit` | Hook script that runs before a commit |
 | `.git/hooks/post-merge` | Hook script that runs after a merge   |
 
+**[⬆ Back to Index](#index)**
+
 ---
 
 This cheat sheet covers the essential Git commands, from basic to advanced, that you'll need for effective version control and collaboration.
+
+**[⬆ Back to Index](#index)**
