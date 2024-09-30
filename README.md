@@ -10,7 +10,7 @@
 
 ### **Index**
 
-1. [What is this repository for?](#what-is-this-repository-for)
+1. [What is this for?](#what-is-this-for)
 2. [Git Basics](#git-basics)
 3. [Branching & Merging](#branching--merging)
 4. [Viewing Commit History](#viewing-commit-history)
@@ -23,7 +23,7 @@
 
 **[⬆ Back to Index](#index)**
 
-## What is this repository for?
+## What is this for?
 
 Here's a **comprehensive Git cheat sheet** that covers commands from basic to advanced, grouped by common workflows and use cases:
 
